@@ -36,6 +36,6 @@ message TransactionResponse {
 }
 
 message ChatMessage {
-    string string_id = 1;
+    string user_id = 1;
     string message = 2;
 }

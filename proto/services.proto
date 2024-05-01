@@ -11,7 +11,7 @@ service TransactionService {
 }
 
 service ChatService {
-    rpc Chat(stram ChatMessage) return (stream ChatMessage);
+    rpc Chat(stream ChatMessage) returns (stream ChatMessage);
 }
 
 
@@ -21,14 +21,14 @@ message PaymentRequest {
 }
 
 message PaymentResponse {
-    bool succes = 1;
+    bool success = 1;
 }
 
 message TransactionRequest {
     string user_id = 1;
 }
 
-message TranscationResponse {
+message TransactionResponse {
     string transaction_id = 1;
     string status = 2;
     double amount = 3;

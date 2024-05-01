@@ -5,6 +5,14 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]] # Bin to run the HelloWorld gRPC server
+name = "grpc-server"
+path = "src/grpc_server.rs"
+
+[[bin]] # Bin to run the HelloWorld gRPC client
+name = "grpc-client"
+path = "src/grpc_client.rs"
+
 [dependencies]
 prost = "0.12.4"
 tokio = { version = "1.37.0", features = ["full"] }

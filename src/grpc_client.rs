@@ -12,7 +12,7 @@ use tokio::{
     sync::mpsc::{self, Receiver, Sender},
 };
 use tokio_stream::wrappers::ReceiverStream;
-use tonic::transport::{channel, Channel};
+use tonic::transport::Channel;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
